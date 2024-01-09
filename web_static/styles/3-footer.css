@@ -1,0 +1,18 @@
+footer
+{
+	color: white;
+	height: 60px;
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	text-align: center;
+	line-height: 60px;
+	bottom: 0;
+}
+
+.footer-text
+{
+	color: black;
+	font-size: 16px;
+	align-items: center;
+	margin-left: 20px;
+}

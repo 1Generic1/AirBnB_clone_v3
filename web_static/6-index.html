@@ -1,0 +1,67 @@
+<!-- an HTML page that displays a header, footer and a filters box with a search button -->
+
+<!DOCTYPE>
+<html>
+<head>
+        <title>AirBnd Clone</title>
+        <!--rel = relationship between html and the linked resource this case = stylesheet
+                  type =  specifies the type of the linked resource. In this case,
+                          it specifies that the linked resource is a Cascading
+                          Style Sheet (CSS) with a "text/css" MIME type.i
+                  href = specifies the location (URL) of the external stylesheet.
+                         In your example, the stylesheet is located in a folder named
+                         "styles" and is named "2-common.css."
+                         The href attribute provides the path to this CSS file.-->
+        <link rel="stylesheet" type="text/css" href="styles/4-common.css">
+        <link rel="stylesheet" type="text/css" href="styles/3-header.css">
+        <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+        <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+	        <!-- Set the icon for the browser tab
+         The icon file should be in the images folder -->
+        <link rel="icon" href="images/icon.png">
+
+</head>
+<body>
+        <header>
+                <div class="logo">
+                </div>
+        </header>
+        <div class="container">
+                <section class="filters">
+			<button type="button">Search</button>
+			<div class="locations">
+				<h3>States</h3>
+				<h4>California, Arizona...</h4>
+				<ul class="popover">
+					<h2>Arizona:</h2>
+						<ul class= "popover_list">
+							<li>page 1</li>
+							<li>page 2</li>
+						</ul>
+					<h2>California:</h2>
+						<ul class= "popover_list">
+							<li>San Francisco</li>
+							<li>Los Altos</li>
+						</ul>
+				</ul>
+			</div>
+			<div class="amenities">
+				<h3>Amenities</h3>
+				<h4>Internet, Kitchen...</h4>
+				<ul class="popover">
+					<li>Internet</li>
+					<li>Tv</li>
+					<li>Kitchen</li>
+					<li>Iron</li>
+				</ul>
+			</div>
+                </section>
+        </div>
+
+        <footer>
+                <p class="footer-text">Best School</p>
+        </footer>
+
+</body>
+
+</html>

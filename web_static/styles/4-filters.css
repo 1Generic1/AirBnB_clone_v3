@@ -1,0 +1,36 @@
+
+/* Styles for the .filters section */
+.filters 
+{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    display: flex;
+}
+
+/* Styles for the .search-button element */
+
+.filters button 
+{
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+/* Styles for the .search-button when hovered */
+
+.filters button:hover 
+{
+    opacity: 90%; /* Reduce opacity to 90% when the button is hovered */
+}

@@ -1,0 +1,21 @@
+header
+{
+	color: white;
+	height: 70px;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	display: flex;
+	align-items: center;
+}
+
+/* Centering the logo vertically and with some space on the left */
+
+header .logo
+{
+	width: 142px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	background: url("/home/generic/AirBnB_clone/web_static/images/logo.png") no-repeat center;
+}
