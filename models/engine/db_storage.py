@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Contains the class DBStorage
+and other methods
 """
 
 from sqlalchemy import create_engine, MetaData
