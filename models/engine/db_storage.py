@@ -112,7 +112,7 @@ class DBStorage:
             cls: Class (optional).
 
         Returns:
-            The number of objects in storage.
+            The number of objects in storage exactly.
         """
         
         all_classes = classes.values()
