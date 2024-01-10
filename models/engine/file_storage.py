@@ -73,7 +73,7 @@ class FileStorage():
         """
         self.reload()
 
-       def get(self, cls, id):
+    def get(self, cls, id):
         """
         Retrieve one object based on the class and its ID.
 
