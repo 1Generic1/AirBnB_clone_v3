@@ -65,6 +65,31 @@ class FileStorageTestCase(unittest.TestCase):
         """ Nothing happens if file does not exist """
         self.assertEqual(storage.reload(), None)
 
+    def test_get(self):
+        """ Tests method for obtaining an instance file storage"""
+        storage = FileStorage()
+        dic = {"name": "Vatican"}
+        instance = State(**dic)
+        storage.new(instance)
+        storage.save()
+        storage = FileStorage()
+        get_instance = storage.get(State, instance.id)
+        self.assertEqual(get_instance, instance)
+
+    @unittest.skipIf(models.storage_t == 'db', "not testing file storage")
+    def test_count(self):
+        """ Tests count method file storage """
+        storage = FileStorage()
+        dic = {"name": "Vatican"}
+        state = State(**dic)
+        storage.new(state)
+        dic = {"name": "new york"}
+        city = City(**dic)
+        storage.new(city)
+        storage.save()
+        c = storage.count()
+        self.assertEqual(len(storage.all()), c)
+
 
 if __name__ == '__main__':
     unittest.main()
